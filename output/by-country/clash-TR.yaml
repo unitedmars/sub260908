@@ -4,21 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 34.51.231.250
-  port: 443
-  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 02 - xiaohe
-  type: vless
-  server: 84.32.217.120
+  server: 185.113.223.183
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -35,14 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - xiaohe
-  - 🇸🇪 SE 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - xiaohe
-  - 🇸🇪 SE 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 rules:
 - MATCH,PROXIES
