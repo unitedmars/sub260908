@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  type: vless
-  server: 46.225.46.136
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hoert1rert.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: hoert1rert.localip.ir
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
   type: ss
   server: 185.226.172.8
@@ -34,19 +27,33 @@ proxies:
   udp: true
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
   type: vless
-  server: 172.67.204.153
-  port: 2053
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  server: 46.225.46.136
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
+  servername: hoert1rert.localip.ir
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    path: /hokm
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: hoert1rert.localip.ir
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: 94.143.231.146
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
   type: vless
   server: 46.225.46.136
   port: 2087
@@ -60,42 +67,14 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  type: vless
-  server: 172.67.133.118
-  port: 2053
-  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
 - name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
   type: vmess
   server: 45.131.153.149
   port: 443
@@ -106,7 +85,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: de.zhou-yufan.com
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -120,13 +99,33 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
+  type: vless
+  server: 178.239.148.203
+  port: 2087
+  uuid: be6eef5f-9ca9-4dd4-867a-5b2b71c828ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tr.ultimatesvc.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 178.239.148.203
 - name: 🇩🇪 德国 (Germany) 12 - xiaohe
   type: vless
   server: 46.225.46.136
@@ -142,27 +141,6 @@ proxies:
     headers:
       Host: hoert1rert.localip.ir
 - name: 🇩🇪 德国 (Germany) 13 - xiaohe
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 153900df-5824-4b55-98c4-418c5baea523
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -176,12 +154,38 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  type: vmess
+  server: mix2.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server10.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /rthiugoyretdsuigg
+    headers:
+      Host: server10.9966338.xyz
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  type: vmess
+  server: 31.76.11.83
+  port: 22366
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 16 - xiaohe
   type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  server: 31.76.11.83
+  port: 15731
+  cipher: chacha20-ietf-poly1305
+  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
   udp: true
 - name: 🇩🇪 德国 (Germany) 17 - xiaohe
   type: vless
