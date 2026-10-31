@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: www.buydomains.com
-  port: 443
-  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-  network: ws
-  ws-opts:
-    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
-    headers:
-      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-- name: 🇨🇿 CZ 02 - xiaohe
-  type: vless
   server: 188.114.98.0
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
@@ -29,10 +15,10 @@ proxies:
   servername: n.bitpulse.me
   network: ws
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560fp=unsafe
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
-- name: 🇨🇿 CZ 03 - xiaohe
+- name: 🇨🇿 CZ 02 - xiaohe
   type: vless
   server: 188.114.98.0
   port: 443
@@ -46,21 +32,7 @@ proxies:
     path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
-- name: 🇨🇿 CZ 04 - xiaohe
-  type: vless
-  server: 172.66.128.146
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 CZ 05 - xiaohe
+- name: 🇨🇿 CZ 03 - xiaohe
   type: vless
   server: 155.212.240.10
   port: 443
@@ -74,7 +46,7 @@ proxies:
     path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
-- name: 🇨🇿 CZ 06 - xiaohe
+- name: 🇨🇿 CZ 04 - xiaohe
   type: vless
   server: 188.114.98.0
   port: 443
@@ -85,7 +57,21 @@ proxies:
   servername: n.bitpulse.me
   network: ws
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560fp=unsafe
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 05 - xiaohe
+  type: vless
+  server: 172.66.128.146
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
     headers:
       Host: n.bitpulse.me
 proxy-groups:
@@ -98,7 +84,6 @@ proxy-groups:
   - 🇨🇿 CZ 03 - xiaohe
   - 🇨🇿 CZ 04 - xiaohe
   - 🇨🇿 CZ 05 - xiaohe
-  - 🇨🇿 CZ 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,6 +94,5 @@ proxy-groups:
   - 🇨🇿 CZ 03 - xiaohe
   - 🇨🇿 CZ 04 - xiaohe
   - 🇨🇿 CZ 05 - xiaohe
-  - 🇨🇿 CZ 06 - xiaohe
 rules:
 - MATCH,PROXIES
