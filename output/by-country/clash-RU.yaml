@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 104.18.0.1
+  server: xsru2.freeddns.org
   port: 443
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: all.speedtest03.ccwu.cc
+  servername: xsru2.freeddns.org
   network: ws
   ws-opts:
-    path: /
+    path: /wsru
     headers:
-      Host: all.speedtest03.ccwu.cc
+      Host: xsru2.freeddns.org
 proxy-groups:
 - name: PROXIES
   type: select
