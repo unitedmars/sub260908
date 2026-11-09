@@ -20,18 +20,18 @@ proxies:
       Host: 60.248.219.78
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   type: vless
-  server: 59.125.69.22
+  server: 85.237.207.141
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tse1.mm.bing.net
+  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560fp=chrome
     headers:
-      Host: tse1.mm.bing.net
+      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
 proxy-groups:
 - name: PROXIES
   type: select
