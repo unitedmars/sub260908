@@ -27,20 +27,6 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 04 - xiaohe
   type: vless
-  server: 109.120.155.155
-  port: 444
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇸🇪 SE 05 - xiaohe
-  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -61,7 +47,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,6 +56,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
 rules:
 - MATCH,PROXIES
