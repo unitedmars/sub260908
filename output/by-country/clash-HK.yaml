@@ -16,12 +16,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki?ed=2048
+    path: /arki
     headers:
-      Host: ''
+      Host: 47.244.120.197
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   type: vless
-  server: 103.219.195.65
+  server: 216.23.93.27
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
